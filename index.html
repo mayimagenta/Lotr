@@ -1,0 +1,442 @@
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- CSS de Bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+        <!-- Biblioteca Chart.js-->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"
+            integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+         <!-- Familias tipográficas-->
+         <link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
+         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <style>
+            /* Familias Tipográficas */
+        
+            :root {
+                --bs-body-font-family: 'Roboto', sans-serif;
+                --bs-body-color: #f7f7e6;
+                --bs-body-bg: #000000;
+            }
+           /* Título */
+            h1 {
+                font-size: 50px;
+                font-family: Macondo, cursive;
+                line-height: 0.8;
+                letter-spacing: 0.2rem;
+                color: #FFAD09
+            }
+            h1 span {
+                font-size: 80%;
+            }
+            /* Logo */
+            .img-fluid {
+                margin:auto;
+		    display:block;
+            }
+            /* Texto destacado */
+            #highlight{
+                color: LightSalmon;
+                font-weight: 700;
+            }
+
+        </style>
+        <title>Personajes LOTR</title>
+    </head>
+    <body>
+         <!-- Carrusel -->
+        <header class="bg-cierre">
+            <div class="container">
+                <div class="row py-3">
+                </div>
+            </div>
+        </header>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="LOTR.jpg" class="d-block w-100" alt="banner1">
+              </div>
+              <div class="carousel-item">
+                <img src="2.jpeg" class="d-block w-100" alt="banner2">
+              </div>
+              <div class="carousel-item">
+                <img src="3.jpg" class="d-block w-100" alt="banner3">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+     <!-- Logo -->
+        <img src="logo.png" width="20%" class="img-fluid" alt="logo"/>
+        
+          </div>
+        <header class="titular">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 mx-auto text-center align-self-end">
+                        <h1 class="my-5">
+                            Personajes de La Comunidad del Anillo
+                        </h1>
+                        <h3 class="fs-3 mb-2">El Señor de los Anillos de J. R. R. Tolkien</h3>
+                        <h3 class="fs-5 mb-3">Data de personajes presentes en la obra literaria de la Comunidad del Anillo.</h3>
+                        <p>Por<a href="https://github.com/mayimagenta" target="_blank" style="color:DarkOrange"> Margarita González L.</a> </p>
+                        <p class="small">PUBLICADO EL 14 DE JUNIO, 2022</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <!-- Introducción -->
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-md-6 mx-auto">
+                        <p class="lead">Los personajes del Señor de los Anillos (y de otras obras literarias de alta 
+                            fantasía de Tolkien) se encuentran emplazados en la localidad ficticia de la <span id="highlight">Tierra Media</span> 
+                            (Middle-Earth), y en las épocas de la <span id="highlight">Primera, Segunda o Tercera Edad.</span></p>
+
+                        <p>El exhaustivo trabajo de Tolkien le llevó a la creación de diferentes razas, 
+                            culturas y especies a la hora de formar sus personajes. Sus vastos conocimientos 
+                            de filología y literatura le permitieron también ofrecer nombres de personajes 
+                            con gran atractivo, y que forman parte de los idiomas creados por el autor para 
+                            el mundo narrativo de El Señor de los Anillos.</p>
+
+                        <p>A partir de un <a href="https://raw.githubusercontent.com/mayimagenta/datos-E1/main/datos.json" 
+                            target="_blank" style="color:DarkOrange"> Json </a> que recopila datos sobre los personajes de La Comunidad del 
+                            Anillo, es posible llevar acabo un análisis más detallado de esta obra.</p>
+                            
+            
+                    <!-- Galería -->
+                    <section id="gallery"> 
+                        <div class="auto" >
+                            <h1 class="text-center">Galería</h1>
+                    <img src="gallery/frodo.PNG" class="img-thumbnail" alt="frodo" style="width:100px;height:100px;">
+                    <img src="gallery/sam.png" class="img-thumbnail" alt="sam" style="width:100px;height:100px;">
+                    <img src="gallery/aragorn.png" class="img-thumbnail" alt="aragorn" style="width:100px;height:100px;">
+                    <img src="gallery/arwen.png" class="img-thumbnail" alt="arwen" style="width:100px;height:100px;">
+                    
+                    <img src="gallery/boromir.PNG" class="img-thumbnail" alt="boromir" style="width:100px;height:100px;">
+                    <img src="gallery/gandalf.png" class="img-thumbnail" alt="gandalf" style="width:100px;height:100px;">
+                    <img src="gallery/bilbo.png" class="img-thumbnail" alt="bilbo" style="width:100px;height:100px;">
+                    <img src="gallery/legolas.png" class="img-thumbnail" alt="legolas" style="width:100px;height:100px;">
+
+                    <img src="gallery/gimli.PNG" class="img-thumbnail" alt="gimli" style="width:100px;height:100px;">
+                    <img src="gallery/merry.png" class="img-thumbnail" alt="merry" style="width:100px;height:100px;">
+                    <img src="gallery/pippin.png" class="img-thumbnail" alt="pippin" style="width:100px;height:100px;">
+                    <img src="gallery/gollum.png" class="img-thumbnail" alt="gollum" style="width:100px;height:100px;">
+
+                    <img src="gallery/galadriel.png" class="img-thumbnail" alt="galadriel" style="width:100px;height:100px;">
+                    <img src="gallery/celeborn.png" class="img-thumbnail" alt="celeborn" style="width:100px;height:100px;">
+                    <img src="gallery/balrog.png" class="img-thumbnail" alt="balrog" style="width:100px;height:100px;">
+                    <img src="gallery/sauron.png" class="img-thumbnail" alt="sauron" style="width:100px;height:100px;">
+
+                    <img src="gallery/saruman.png" class="img-thumbnail" alt="saruman" style="width:100px;height:100px;">
+                    <img src="gallery/tom.png" class="img-thumbnail" alt="tom" style="width:100px;height:100px;">
+                    <img src="gallery/goldberry.png" class="img-thumbnail" alt="goldberry" style="width:100px;height:100px;">
+                    <img src="gallery/sauron.png" class="img-thumbnail" alt="sauron" style="width:100px;height:100px;">
+                        </div>
+                    </section>
+
+                    <!-- Gráfico 1 -->
+
+                        <!--mejor contener la torta en un espacio más angosto, para que se lea completa-->
+                        <canvas id="Grafico1" width="400" height="200" class="mb-5"></canvas>
+                    <div class="col-md-10 mx-auto my-5">
+                        
+                        
+                        <!-- Gráfico 2 -->
+                        <canvas id="Grafico2" width="400" height="200" class="mb-5"></canvas>
+                    </div>
+
+                    <div class="col-md-6 mx-auto">
+                        <p>Si caracterizamos a las personas responsables de estos crimenes, podemos saber su edad</p>
+                    </div>
+
+                    <!-- Gráfico 3 -->
+                    <div class="col-md-10 mx-auto">
+                        <canvas id="Grafico3" width="400" height="200" class="mb-5"></canvas>
+                    </div>
+
+                    <div class="col-md-6 mx-auto">
+                        <p>Sus caracteristicas raciales</p>
+
+                        <!-- Gráfico 4 -->
+                        <canvas id="Grafico4" width="400" height="200" class="mb-5"></canvas>
+
+                        <!-- Gráfico 5 -->
+                        <p>Y, por ultimo, su genero</p>
+                        <canvas id="Grafico5" width="400" height="200" class="mb-5"></canvas>
+                    </div>
+
+                    <div class="col-md-10 mx-auto my-5">
+                        <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 row-cols-xl-6 g-3 text-center" id="aqui"></div>
+                    </div>
+                    <div class="col-md-6 mx-auto">
+                        <p>
+                            <em>Este último párrafo debe ser el cierre de lo presentado</em>. Mauris ultrices, ligula nec vulputate bibendum, nisi neque ultricies sem, eget volutpat magna nulla quis libero. Pellentesque habitant morbi
+                            tristique senectus et netus et malesuada fames ac turpis egestas. Praesent nec est ex. Nulla nunc elit, mattis vel justo ac, iaculis interdum tellus. Praesent id orci leo. Phasellus eleifend tellus cursus enim
+                            imperdiet, ullamcorper ullamcorper augue volutpat. Sed at mi in magna imperdiet accumsan. Aenean cursus velit urna, lacinia hendrerit turpis congue vitae. Cras non tortor vestibulum, efficitur est vitae, posuere
+                            justo.
+                        </p>
+
+                        <p class="small my-5">
+                            Este párrafo más pequeño debería entregar información adicional: Que se trata de un trabajo para el electivo de
+                            <a href="https://github.com/profesorfaco/front-end">Introducción al Desarrollo Front End con HTML, CSS y JavaScript</a>; que el trabajo está "inspirado" en
+                            <a href="https://graphics.reuters.com/TONGA-VOLCANO/LIGHTNING/zgpomjdbypd/">Analysing the volcanic lightning from the Tonga eruption</a>, que originalmente fue desarrollado para
+                            <a href="https://graphics.reuters.com/">Reuters Graphics</a> por Manas Sharma y Simon Scarr; que el trabajo se resuelve con <a href="https://getbootstrap.com/">Bootstrap</a> y
+                            <a href="https://www.chartjs.org/">Charts.js</a>, además de consultas a un <a href="https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto5/TotalesNacionales.csv">CSV</a> y un
+                            <a href="https://digimon-api.vercel.app/api/digimon">JSON</a>; etc.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="bg-cierre">
+            <div class="container">
+                <div class="row py-3">
+                    <div class="col text-center"><small>Margarita González | 15 de Junio, 2022</small></div>
+                </div>
+            </div>
+        </footer>
+
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"
+            integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <!-- Un gran script, que contiene una función asincrónica para ir a buscar un JSON con -->
+        <script>
+            async function visualizacion() {
+                //el fetch
+                const consulta = await fetch("https://raw.githubusercontent.com/mayimagenta/datos-E1/main/datos.json");
+                const data = await consulta.json();
+                //algunas variables para calcular
+
+                var lasMujeres = 0;
+                var losHombres = 0;
+                //Grupos atacados
+                var lesLGBT = 0;
+                var lesJudios = 0;
+                var lesAfroamericanos = 0;
+                var lesAapi = 0;
+                var lesMusulmanes = 0;
+                var lesMujeres = 0;
+                var lesBlancos = 0;
+                var lesOtres = 0;
+                //grupos etarios
+                var menorDeEdad = 0;
+                var veinteAnos = 0;
+                var treintaAnos = 0;
+                var cuarentaAnos = 0;
+                var cincuentaAnos = 0;
+                var sesentaAnos = 0;
+                var setentaAnos = 0;
+                //etnias atacadores
+                var blancx = 0;
+                var negrx = 0;
+                var latinx = 0;
+                var asiaticx = 0;
+
+                //consultando en cada elemento del arreglo
+                data.forEach((d) => {
+                    //genero
+                    if (d.Gender == "MALE") {
+                        losHombres = losHombres + 1;
+                    } else {
+                        lasMujeres = lasMujeres + 1;
+                    }
+                    //grupos atacados
+                    if (d.BiasMotivation == "ANTIASIAN") {
+                        lesAapi = lesAapi + 1;
+                    } else if (d.BiasMotivation == "ANTIBLACK") {
+                        lesAfroamericanos = lesAfroamericanos + 1;
+                    } else if (d.BiasMotivation == "ANTIFEMALE") {
+                        lesMujeres = lesMujeres + 1;
+                    } else if (d.BiasMotivation == "ANTIISLAMIC") {
+                        lesMusulmanes = lesMusulmanes + 1;
+                    } else if (d.BiasMotivation == "ANTIJEWISH") {
+                        lesJudios = lesJudios + 1;
+                    } else if (d.BiasMotivation == "ANTIMALE_HOMOSEXUAL") {
+                        lesLGBT = lesLGBT + 1;
+                    } else if (d.BiasMotivation == "ANTI_LGBT") {
+                        lesLGBT = lesLGBT + 1;
+                    } else if (d.BiasMotivation == "ANTITRANSGENDER") {
+                        lesLGBT = lesLGBT + 1;
+                    } else if (d.BiasMotivation == "ANTIWHITE") {
+                        lesBlancos = lesBlancos + 1;
+                    } else {
+                        lesOtres = lesOtres + 1;
+                    }
+                    //grupos atacadores edad
+                    if (d.AgeGroup == "10_20") {
+                        menorDeEdad = menorDeEdad + 1;
+                    } else if (d.AgeGroup == "20_30") {
+                        veinteAnos = veinteAnos + 1;
+                    } else if (d.AgeGroup == "30_30") {
+                        treintaAnos = treintaAnos + 1;
+                    } else if (d.AgeGroup == "30_40") {
+                        treintaAnos = treintaAnos + 1;
+                    } else if (d.AgeGroup == "40_40") {
+                        cuarentaAnos = cuarentaAnos + 1;
+                    } else if (d.AgeGroup == "40_50") {
+                        cuarentaAnos = cuarentaAnos + 1;
+                    } else if (d.AgeGroup == "50_50") {
+                        cincuentaAnos = cincuentaAnos + 1;
+                    } else if (d.AgeGroup == "50_60") {
+                        cincuentaAnos = cincuentaAnos + 1;
+                    } else if (d.AgeGroup == "60_60") {
+                        sesentaAnos = sesentaAnos + 1;
+                    } else if (d.AgeGroup == "60_70") {
+                        sesentaAnos = sesentaAnos + 1;
+                    } else {
+                        setentaAnos = setentaAnos + 1;
+                    }
+                });
+                //gráficar
+                //Género
+                new Chart(document.getElementById("Grafico1").getContext("2d"), {
+                    type: "pie",
+                    data: {
+                        labels: ["Masculino", "Femenino"],
+                        datasets: [{ data: [17, 4], label: "total de personajes", backgroundColor: ["#C70039","#FFC300 "] }],
+                    },
+                    options: {
+                        animation: false,
+                        layout: {
+                            padding: 10,
+                        },
+                    },
+                });
+                //Raza
+                new Chart(document.getElementById("Grafico2").getContext("2d"), {
+                    type: "bar",
+                    data: {
+                        labels: ["Humano", "Hobbit", "Elfo", "Enano", "Maiar", "Medio-Elfo", "Stoor", "Unknown"],
+                        datasets: [
+                            {
+                                data: [lesAapi, lesAfroamericanos, lesMujeres, lesMusulmanes, lesJudios, lesLGBT, lesBlancos, lesOtres],
+                                label: "total de personajes",
+                                backgroundColor: ["#728FCE", "#4863A0", "#2B547E", "#36454F", "#29465B", "#2B3856", "#123456", "#151B54"],
+                            },
+                        ],
+                    },
+                    options: {
+                        animation: false,
+                        indexAxis: "y",
+                        layout: {
+                            padding: 10,
+                        },
+                        scales: {
+                            x: {
+                                ticks: { color: "#eee" },
+                            },
+                            y: {
+                                ticks: { color: "#eee" },
+                            },
+                        },
+                        plugins: {
+                            legend: {
+                                display: false,
+                            },
+                        },
+                    },
+                });
+                //edad victimarios
+                new Chart(document.getElementById("Grafico3").getContext("2d"), {
+                    type: "bar",
+                    data: {
+                        labels: ["adolescentes", "veinteañeros", "treintañeros", "cuarentañeros", "cincuentañeros", "sexagenarios", "septagenario"],
+                        datasets: [
+                            {
+                                data: [menorDeEdad, veinteAnos, treintaAnos, cuarentaAnos, cincuentaAnos, sesentaAnos, setentaAnos],
+                                label: "Atacantes de esta edad",
+                                backgroundColor: ["#728FCE", "#4863A0", "#2B547E", "#36454F", "#29465B", "#2B3856", "#123456"],
+                            },
+                        ],
+                    },
+                    options: {
+                        animation: false,
+                        indexAxis: "y",
+                        layout: {
+                            padding: 10,
+                        },
+                        scales: {
+                            x: {
+                                ticks: { color: "#eee" },
+                            },
+                            y: {
+                                ticks: { color: "#eee" },
+                            },
+                        },
+                        plugins: {
+                            legend: {
+                                display: false,
+                            },
+                        },
+                    },
+                });
+                //etnia victimarios
+                new Chart(document.getElementById("Grafico4").getContext("2d"), {
+                    type: "pie",
+                    data: {
+                        labels: ["blancos", "negros", "latinos", "asiaticos"],
+                        datasets: [
+                            {
+                                data: [blancx, negrx, latinx, asiaticx],
+                                label: "atacantes con esta caracteristica",
+                                backgroundColor: ["#728FCE", "#4863A0", "#2B547E", "#36454F"],
+                            },
+                        ],
+                    },
+                    options: {
+                        animation: false,
+                        layout: {
+                            padding: 10,
+                        },
+                    },
+                });
+                //genero victimarios
+                new Chart(document.getElementById("Grafico5").getContext("2d"), {
+                    type: "pie",
+                    data: {
+                        labels: ["masculino", "femenino"],
+                        datasets: [
+                            {
+                                data: [losHombres, lasMujeres],
+                                label: "Atacantes de este genero",
+                                backgroundColor: ["#728FCE", "#4863A0"],
+                            },
+                        ],
+                    },
+                    options: {
+                        animation: false,
+                        layout: {
+                            padding: 10,
+                        },
+                    },
+                });
+            }
+
+            visualizacion().catch((error) => console.error(error));
+        </script>
+        <script>
+            //Para cambiar todos los links de una
+            document.querySelectorAll("a").forEach((a) => a.classList.add("link-danger"));
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js" integrity="sha512-sW/w8s4RWTdFFSduOTGtk4isV1+190E/GghVffMA9XczdJ2MDzSzLEubKAs5h0wzgSJOQTRYyaz73L3d6RtJSg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </body>
+</html>
