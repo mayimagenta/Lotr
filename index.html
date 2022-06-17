@@ -55,10 +55,23 @@
               letter-spacing: 0.2rem;
               color: #ffffff 
             }
+            a:hover{
+                color: #e88009;
+            }
+            img.efecto{
+                filter: grayscale(1) opacity(.5);
+                transition: ease filter .5s;
+            }
+            img.efecto:hover{
+                filter: grayscale(0) opacity(1);
+                transition: ease filter .5s;
+            }
           
 
         </style>
         <title>Personajes LOTR</title>
+        <!-- Favicon -->
+        <link rel="icon" href="favicon.png">
     </head>
     <body>
          <!-- Carrusel -->
@@ -91,7 +104,7 @@
         </div>
      <!-- Logo -->
         <img src="logo.png" width="20%" class="img-fluid" alt="logo"/>
-        
+        <!-- Título -->
           </div>
         <header class="titular">
             <div class="container">
@@ -132,30 +145,30 @@
                     <section id="gallery"> 
                         <div class="auto" >
                             <h1 class="text-center">Galería</h1>
-                    <img src="gallery/frodo.PNG" class="img-thumbnail" alt="frodo" style="width:100px;height:100px;">
-                    <img src="gallery/sam.png" class="img-thumbnail" alt="sam" style="width:100px;height:100px;">
-                    <img src="gallery/aragorn.png" class="img-thumbnail" alt="aragorn" style="width:100px;height:100px;">
-                    <img src="gallery/arwen.png" class="img-thumbnail" alt="arwen" style="width:100px;height:100px;">
+                    <img src="gallery/frodo.PNG"  class="efecto" alt="frodo" style="width:100px;height:100px;">
+                    <img src="gallery/sam.png" class="efecto" alt="sam" style="width:100px;height:100px;">
+                    <img src="gallery/aragorn.png" class="efecto" alt="aragorn" style="width:100px;height:100px;">
+                    <img src="gallery/arwen.png" class="efecto" alt="arwen" style="width:100px;height:100px;">
                     
-                    <img src="gallery/boromir.PNG" class="img-thumbnail" alt="boromir" style="width:100px;height:100px;">
-                    <img src="gallery/gandalf.png" class="img-thumbnail" alt="gandalf" style="width:100px;height:100px;">
-                    <img src="gallery/bilbo.png" class="img-thumbnail" alt="bilbo" style="width:100px;height:100px;">
-                    <img src="gallery/legolas.png" class="img-thumbnail" alt="legolas" style="width:100px;height:100px;">
+                    <img src="gallery/boromir.PNG" class="efecto" alt="boromir" style="width:100px;height:100px;">
+                    <img src="gallery/gandalf.png" class="efecto" alt="gandalf" style="width:100px;height:100px;">
+                    <img src="gallery/bilbo.png" class="efecto" alt="bilbo" style="width:100px;height:100px;">
+                    <img src="gallery/legolas.png" class="efecto" alt="legolas" style="width:100px;height:100px;">
 
-                    <img src="gallery/gimli.PNG" class="img-thumbnail" alt="gimli" style="width:100px;height:100px;">
-                    <img src="gallery/merry.png" class="img-thumbnail" alt="merry" style="width:100px;height:100px;">
-                    <img src="gallery/pippin.png" class="img-thumbnail" alt="pippin" style="width:100px;height:100px;">
-                    <img src="gallery/gollum.png" class="img-thumbnail" alt="gollum" style="width:100px;height:100px;">
+                    <img src="gallery/gimli.PNG" class="efecto" alt="gimli" style="width:100px;height:100px;">
+                    <img src="gallery/merry.png" class="efecto" alt="merry" style="width:100px;height:100px;">
+                    <img src="gallery/pippin.png" class="efecto" alt="pippin" style="width:100px;height:100px;">
+                    <img src="gallery/gollum.png" class="efecto" alt="gollum" style="width:100px;height:100px;">
 
-                    <img src="gallery/galadriel.png" class="img-thumbnail" alt="galadriel" style="width:100px;height:100px;">
-                    <img src="gallery/celeborn.png" class="img-thumbnail" alt="celeborn" style="width:100px;height:100px;">
-                    <img src="gallery/balrog.png" class="img-thumbnail" alt="balrog" style="width:100px;height:100px;">
-                    <img src="gallery/sauron.png" class="img-thumbnail" alt="sauron" style="width:100px;height:100px;">
+                    <img src="gallery/galadriel.png" class="efecto" alt="galadriel" style="width:100px;height:100px;">
+                    <img src="gallery/celeborn.png" class="efecto" alt="celeborn" style="width:100px;height:100px;">
+                    <img src="gallery/balrog.png" class="efecto" alt="balrog" style="width:100px;height:100px;">
+                    <img src="gallery/sauron.png" class="efecto" alt="sauron" style="width:100px;height:100px;">
 
-                    <img src="gallery/saruman.png" class="img-thumbnail" alt="saruman" style="width:100px;height:100px;">
-                    <img src="gallery/tom.png" class="img-thumbnail" alt="tom" style="width:100px;height:100px;">
-                    <img src="gallery/goldberry.png" class="img-thumbnail" alt="goldberry" style="width:100px;height:100px;">
-                    <img src="gallery/sauron.png" class="img-thumbnail" alt="sauron" style="width:100px;height:100px;">
+                    <img src="gallery/saruman.png" class="efecto" alt="saruman" style="width:100px;height:100px;">
+                    <img src="gallery/tom.png" class="efecto" alt="tom" style="width:100px;height:100px;">
+                    <img src="gallery/goldberry.png" class="efecto" alt="goldberry" style="width:100px;height:100px;">
+                    <img src="gallery/sauron.png" class="efecto" alt="sauron" style="width:100px;height:100px;">
                         </div>
                     
 
@@ -164,12 +177,12 @@
                     <p></p>
                     <p></p>
                     <p class="detalle">Si dividimos a los personajes de La Comunidad del Anillo en base a su género, 
-                        obtenemos una notoria desigualdad.</p>
+                        obtenemos una notoria desigualdad:</p>
                         <!--mejor contener la torta en un espacio más angosto, para que se lea completa-->
                         <canvas id="Grafico1" width="400" height="200" class="mb-5"></canvas>
                     <div class="col-md-12 mx-auto my-5">
                         <div class="container py-5">
-                        <p class="detalle">Si los clasificamos de acuerdo a su raza, </p>
+                        <p class="detalle">Si los clasificamos de acuerdo a su raza: </p>
                    <!-- Gráfico 2 -->
                         <canvas id="Grafico2" width="400" height="200" class="mb-5"></canvas>
                     </div>
@@ -208,12 +221,14 @@
                             formar parte de la cultura popular.
                         </p>
                     </div>
+                    <!-- Mapa Tierra Media 5 -->
+                    <img src="map.jpg" class="efecto" style="display:block; margin-left:auto; margin-right: auto; width: 100%; padding-top: 3%; padding-bottom: 3%;">
                          <!-- Cierre 5 -->
                         <p class="small my-5">
                             Esta página web se trata de un trabajo para el electivo de
-                            <a href="https://github.com/profesorfaco/front-end" target="_blank" style="color:DarkOrange">Introducción al Desarrollo Front End con HTML, CSS y JavaScript</a>; que el trabajo está "inspirado" en
-                            <a href="https://graphics.reuters.com/TONGA-VOLCANO/LIGHTNING/zgpomjdbypd/" target="_blank" style="color:DarkOrange">Analysing the volcanic lightning from the Tonga eruption</a>, que originalmente fue desarrollado para
-                            <a href="https://graphics.reuters.com/" target="_blank" style="color:DarkOrange">Reuters Graphics</a> por Manas Sharma y Simon Scarr; que el trabajo se resuelve con <a href="https://getbootstrap.com/" target="_blank" style="color:DarkOrange">Bootstrap</a> y
+                            <a href="https://github.com/profesorfaco/front-end" target="_blank" style="color:DarkOrange">Introducción al Desarrollo Front End con HTML, CSS y JavaScript</a>; "inspirado" en
+                            <a href="https://graphics.reuters.com/TONGA-VOLCANO/LIGHTNING/zgpomjdbypd/" target="_blank" style="color:DarkOrange">Analysing the volcanic lightning from the Tonga eruption</a>, originalmente desarrollado para
+                            <a href="https://graphics.reuters.com/" target="_blank" style="color:DarkOrange">Reuters Graphics</a> por Manas Sharma y Simon Scarr; que se resuelve con <a href="https://getbootstrap.com/" target="_blank" style="color:DarkOrange">Bootstrap</a> y
                             <a href="https://www.chartjs.org/" target="_blank" style="color:DarkOrange">Charts.js</a>, además de consultas a un <a href="https://raw.githubusercontent.com/mayimagenta/datos-E1/main/personajes_LOTR.csv" target="_blank" style="color:DarkOrange">CSV</a> y un
                             <a href="https://raw.githubusercontent.com/mayimagenta/datos-E1/main/datos.json" target="_blank" style="color:DarkOrange">JSON</a>.
                         </p>
@@ -453,20 +468,6 @@
         <script>
             //Para cambiar todos los links de una
             document.querySelectorAll("a").forEach((a) => a.classList.add("link-danger"));
-        
-            //Emoji
-            function setup() {
-                createCanvas(windowWidth - 40, windowHeight - 40)
-                    .position(20, 20)
-                    .style("z-index", -1);
-                }
-            function draw() {
-                background(254,80,0);
-                textSize(100);
-                text("🧝‍♀️",mouseX,mouseY);
-                fill(20);
-                ellipse(mouseX+50,mouseY+50, 90, 10)
-            }
         </script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
