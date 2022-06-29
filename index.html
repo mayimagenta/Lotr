@@ -25,6 +25,13 @@
                 --bs-body-color: #f7f7e6;
                 --bs-body-bg: #000000;
             }
+            /* Fondo imagen */
+            body {
+                background: black url(https://i.ibb.co/rtZZMx6/9916819-A-DD46-46-C8-9-A75-C270-C1-D3-F69-F.png) 
+                top center no-repeat;
+                background-color: #000000;
+                background-size: 100% auto;
+            }
            /* Título */
             h1 {
                 font-size: 50px;
@@ -126,14 +133,14 @@
             <div class="container py-5">
                 <div class="row">
                     <div class="col-md-6 mx-auto">
-                        <p class="lead">Los personajes del Señor de los Anillos (y de otras obras literarias de alta 
+                        <p class="lead">Los personajes de El Señor de los Anillos (y de otras obras literarias de alta 
                             fantasía de Tolkien) se encuentran emplazados en la localidad ficticia de la <span id="highlight">Tierra Media</span> 
                             (Middle-Earth), y en las épocas de la <span id="highlight">Primera, Segunda o Tercera Edad.</span></p>
 
                         <p>El exhaustivo trabajo de Tolkien le llevó a la creación de diferentes razas, 
                             culturas y especies a la hora de formar sus personajes. Sus vastos conocimientos 
-                            de filología y literatura le permitieron también ofrecer nombres de personajes 
-                            con gran atractivo, y que forman parte de los idiomas creados por el autor para 
+                            de filología y literatura, y sus conocimientos de diversos idiomas le permitieron 
+                            también ofrecer nombres de personajes con gran atractivo, y que forman parte de los idiomas creados por el autor para 
                             el mundo narrativo de El Señor de los Anillos.</p>
 
                         <p>A partir de un <a href="https://raw.githubusercontent.com/mayimagenta/datos-E1/main/datos.json" 
@@ -180,9 +187,22 @@
                         obtenemos una notoria desigualdad:</p>
                         <!--mejor contener la torta en un espacio más angosto, para que se lea completa-->
                         <canvas id="Grafico1" width="400" height="200" class="mb-5"></canvas>
+                        <p class="detalle">Esta situación a derivado en que muchos alerten sobre la misoginia de los libros de Tolkien. 
+                            Las diferentes visiones respecto a la importancia de los personajes femeninos en el libro es objeto de debate. Si bien 
+                            <a href="https://medium.com/fan-fare/the-lack-of-women-in-the-lord-of-the-rings-is-alarming-6b792bec985c" 
+                            target="_blank" style="color:DarkOrange"> algunas personas desestiman estas acusasiones</a>, no es de
+                            extrañar que este debate se encuentre presente al hablar de ESDLA y demás obras. Independiente de la opinión
+                            que se forme el lector al respecto (si es que existe misoginia o no), siempre es bienvenido repasar lo bueno y lo malo 
+                            que ha ofrecido la literatura de Tolkien, que tanto influencia las historias contemporáneas, y saber qué retomar y qué dejar
+                            atrás.
+            
+                        </p>
                     <div class="col-md-12 mx-auto my-5">
                         <div class="container py-5">
-                        <p class="detalle">Si los clasificamos de acuerdo a su raza: </p>
+                        <p class="detalle">Por otra parte, si clasificamos a los personajes de acuerdo a su raza, notaremos una interesante
+                            variedad, sobretodo si consideramos sólo <a href="https://lotr.fandom.com/wiki/Fellowship_of_the_Ring_(group)" 
+                            target="_blank" style="color:DarkOrange">los personajes de la Comunidad</a>, notaremos una variedad entre los miembros,
+                            a nivel cultural, físico, y de habilidades:</p>
                    <!-- Gráfico 2 -->
                         <canvas id="Grafico2" width="400" height="200" class="mb-5"></canvas>
                     </div>
